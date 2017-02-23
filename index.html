@@ -13,16 +13,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
 
 <!--links to css and fonts-->
-       <link rel="stylesheet" type="text/css" href="css/framework.css">
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!--       <link rel="stylesheet" type="text/css" href="css/framework.css">-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-       <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">  
+       <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> 
     <title>Boiler Plate</title>   
        
        
 </head>
     <body>
+        <div class='container'>
         <div class='row'>
-        <div class='col-12 border'>
+        <div class='col-md-12 border'>
           <header id="header">
             <h1>Web Ninja</h1>
       
@@ -35,7 +37,7 @@
         </div>
         
         <div class='row'>
-        <div class='col-12 border'>
+        <div class='col-md-12 border'>
          <nav id="nav">
               <ul class='button wrap'>
                 <button>Schedule</button> 
@@ -50,10 +52,10 @@
         
         
        <div class='row max-width'>
-           <div class='col-8 border'>
+           <div class='col-md-8 border'>
                <div class='main-content-wrapper'>
-                  <div class='side-by-side'>
-                     <section class='images-content'>
+                  <div class='row'>
+                     <section class='images-content col-6'>
                          
                          <img src='images/scooby%20doo.jpg'>
                          <h4><a href="https:google.com">Jacob Weaver</a>
@@ -74,7 +76,7 @@
                
                 </div>
 <!--end main-contnet-wrapper -->
-            <div class='col-4 border'>
+            <div class='col-md-4 border'>
                <div id="aside-content-wrapper">
                    <aside id='aside-right'>
                    <h3>Latest Work</h3>
@@ -98,17 +100,20 @@
   
     <div id='favorite-sites' class="row">
         
-        <div class='col-4'></div><img src='images/fbook.png'></div>
-           <div class='col-4'><img src='images/gplus.png'></div>
-           <div class='col-4'><img src='images/twitter.png'></div>
+        <div class='col-md-4'></div><img src='images/fbook.png'></div>
+           <div class='col-md-4'><img src='images/gplus.png'></div>
+           <div class='col-md-4'><img src='images/twitter.png'></div>
          
     </div>        
         <div class="row">
-            <div class='col-12'>
+            <div class='col-md-12'>
         <footer>Footy</footer>
             </div>
         </div>
-    <script src='js/main.js'> </script>
+    </div>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/main.js"> </script>    
+    <script src="js/jquery.min.js"> </script> 
     </body>
     
     
