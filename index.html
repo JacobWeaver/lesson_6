@@ -22,7 +22,7 @@
        
 </head>
     <body>
-        <div class='container'>
+        <div class='container-fluid'>
         <div class='row'>
         <div class='col-md-12 border'>
           <header id="header">
@@ -41,8 +41,8 @@
          <nav id="nav">
               <ul class='button wrap'>
                 <button>Schedule</button> 
-                <button>CSS</button>
-                <button>HTML</button>
+                <button data-toggle="modal" data-target="#css3_modal">CSS</button>
+                <button  data-toggle="modal" data-target="#html5_modal">HTML</button>
                 <button>Responsive Design</button>
               </ul>
             </nav>
@@ -98,11 +98,12 @@
     </div>
 
   
-    <div id='favorite-sites' class="row">
-        
-        <div class='col-md-4'></div><img src='images/fbook.png'></div>
-           <div class='col-md-4'><img src='images/gplus.png'></div>
-           <div class='col-md-4'><img src='images/twitter.png'></div>
+    <div id="favorite-sites">
+      <div class="row">  
+        <div class='col-md-4'><img class="img-responsive" src='images/fbook.png'></div>
+           <div class='col-md-4'><img class="img-responsive" src='images/gplus.png'></div>
+           <div class='col-md-4'><img class="img-responsive" src='images/twitter.png'></div>
+        </div>
          
     </div>        
         <div class="row">
@@ -111,6 +112,59 @@
             </div>
         </div>
     </div>
+<!--End Container Div-->
+<!-- Modal-html5 -->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class='img-modal'>
+         <img src="images/html5.png">
+              </div>
+          <br>
+          <p><strong>HTML5</strong> is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.</p>
+          <p>Source:</p><span><a
+          href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'>'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3</a></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-css3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class='image-modal'><img src="images/css3.png">
+          </div>
+          <br>
+          <br>
+          <p><strong>CSS3</strong>is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It bringings a lot of long-awaited novelties.</p>
+          <br>
+          <p>Source:</p><span><a
+          href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3'>'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3</a></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
     <script src="js/bootstrap.min.js"> </script>
     <script src="js/main.js"> </script>    
     <script src="js/jquery.min.js"> </script> 
