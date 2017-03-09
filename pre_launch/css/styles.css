@@ -132,6 +132,7 @@ text-align: center;
     background-color :white;
     font-family: 'Lato', sans-serif;
     margin-top; 50px;
+    border-bottom: 1px black solid;
 }
 #aside-right {
     margin: 0 50px 0 8px;
@@ -148,7 +149,7 @@ text-align: center;
 #latest-work > li {
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 100%:
+    width: 100%;
     border-bottom: 1px black solid;
 }
 
@@ -162,7 +163,7 @@ text-align: center;
     width:0;
     left: -1em;
     top:.9em;
-    position:relative;
+    position:relative; 
 }
 #favorite-sites {
     background-image: url(img/bg.jpeg);
